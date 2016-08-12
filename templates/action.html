@@ -3,7 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>{{=T(recipient.title)}}</title>
+<title>{{=recipient.title}}</title>
 <link href="styles.css" media="all" rel="stylesheet" type="text/css" />
 </head>
 
@@ -26,17 +26,17 @@
 								</tr>
 								<tr>
 									<td class="content-block">
-										{{=T(recipient.line1)+':'}}
+										{{=recipient.line1}}
 									</td>
 								</tr>
 								<tr>
 									<td class="content-block">
-										{{=T(recipient.line2)+':'}}
+										{{=recipient.line2}}
 									</td>
 								</tr>
 								<tr>
 									<td class="content-block" itemprop="handler" itemscope itemtype="http://schema.org/HttpActionHandler">
-										<a href="{{=recipient.url}}" class="btn-primary" itemprop="url">{{=T(recipient.button_text)}}</a>
+										<a href="{{=recipient.url}}" class="btn-primary" itemprop="url">{{=recipient.button_text}}</a>
 									</td>
 								</tr>
 								<tr>
