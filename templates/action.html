@@ -3,7 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>{{=recipient.title}}</title>
+<title>Sistema de entrega de Documentos</title>
 <link href="styles.css" media="all" rel="stylesheet" type="text/css" />
 </head>
 
@@ -26,17 +26,24 @@
 								</tr>
 								<tr>
 									<td class="content-block">
-										{{=recipient.line1}}
+										Su documento esta dispoble para su descarga
 									</td>
 								</tr>
 								<tr>
 									<td class="content-block">
-										{{=recipient.line2}}
+										Por favor use el siguiente enlace para descargarlo.
 									</td>
 								</tr>
+
 								<tr>
 									<td class="content-block" itemprop="handler" itemscope itemtype="http://schema.org/HttpActionHandler">
 										<a href="{{=recipient.url}}" class="btn-primary" itemprop="url">{{=recipient.button_text}}</a>
+									</td>
+								</tr>
+								<tr>
+									<td class="content-block">
+										O bien copie y pegue este enlace en la barra de direccion de su navegador:<br>
+										<p>recipient.url</p>
 									</td>
 								</tr>
 								<tr>
